@@ -272,7 +272,7 @@ window.Quarto = {
 \pi_A = 0.22, \quad \pi_B = 0.18
 \]</span></p>
 <p>so the true difference is <span class="math inline">\(\theta = 0.04\)</span>.</p>
-<div id="35a2cdc3" class="cell" data-execution_count="1">
+<div id="88e5deb9" class="cell" data-execution_count="1">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>np.random.seed(<span class="dv">42</span>)</span>
@@ -294,7 +294,7 @@ window.Quarto = {
 <section id="the-law-of-large-numbers" class="level2">
 <h2 class="anchored" data-anchor-id="the-law-of-large-numbers">The Law of Large Numbers</h2>
 <p>The Law of Large Numbers states that as the sample size increases, the sample mean converges to the true population mean. This gives me confidence that my estimator <span class="math inline">\(\hat{\theta}\)</span> becomes more accurate as I collect more data.</p>
-<div id="f358434c" class="cell" data-execution_count="2">
+<div id="342d3b74" class="cell" data-execution_count="2">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>diffs <span class="op">=</span> A <span class="op">-</span> B</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>running_mean <span class="op">=</span> np.cumsum(diffs) <span class="op">/</span> np.arange(<span class="dv">1</span>, n<span class="op">+</span><span class="dv">1</span>)</span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -319,7 +319,7 @@ window.Quarto = {
 <section id="bootstrap-standard-errors" class="level2">
 <h2 class="anchored" data-anchor-id="bootstrap-standard-errors">Bootstrap Standard Errors</h2>
 <p>To understand the precision of our estimate, I use bootstrapping. Bootstrapping is a resampling method where I repeatedly sample from my observed data (with replacement) and compute the statistic of interest.</p>
-<div id="47706b6d" class="cell" data-execution_count="3">
+<div id="beffe8c2" class="cell" data-execution_count="3">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>boot_estimates <span class="op">=</span> []</span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> _ <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1000</span>):</span>
@@ -334,7 +334,7 @@ window.Quarto = {
 </div>
 </div>
 <p>I can compare this to the analytical standard error:</p>
-<div id="f0f83e10" class="cell" data-execution_count="4">
+<div id="2804503f" class="cell" data-execution_count="4">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>piA_hat <span class="op">=</span> A.mean()</span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>piB_hat <span class="op">=</span> B.mean()</span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -346,7 +346,7 @@ window.Quarto = {
 </div>
 <p>The two values are very close, which confirms that bootstrapping provides a reliable estimate of uncertainty.</p>
 <p>A 95% confidence interval can be constructed as:</p>
-<div id="3c5981ea" class="cell" data-execution_count="5">
+<div id="544b26cc" class="cell" data-execution_count="5">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>lower <span class="op">=</span> theta_hat <span class="op">-</span> <span class="fl">1.96</span> <span class="op">*</span> boot_se</span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>upper <span class="op">=</span> theta_hat <span class="op">+</span> <span class="fl">1.96</span> <span class="op">*</span> boot_se</span>
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>(lower, upper)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -359,7 +359,7 @@ window.Quarto = {
 <section id="the-central-limit-theorem" class="level2">
 <h2 class="anchored" data-anchor-id="the-central-limit-theorem">The Central Limit Theorem</h2>
 <p>The Central Limit Theorem states that as the sample size increases, the sampling distribution of the estimator becomes approximately normal, regardless of the underlying distribution.</p>
-<div id="fa00e5e5" class="cell" data-execution_count="6">
+<div id="deaf8854" class="cell" data-execution_count="6">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>sample_sizes <span class="op">=</span> [<span class="dv">25</span>, <span class="dv">50</span>, <span class="dv">100</span>, <span class="dv">500</span>]</span>
@@ -382,7 +382,7 @@ window.Quarto = {
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="hw1_questions_files/figure-html/cell-7-output-1.png" width="961" height="758" class="figure-img"></p>
+<p><img src="hw1_questions_files/figure-html/cell-7-output-1.png" width="962" height="757" class="figure-img"></p>
 </figure>
 </div>
 </div>
@@ -400,14 +400,14 @@ H_0: \theta = 0
 H_1: \theta \neq 0
 \]</span></p>
 <p>I compute the test statistic:</p>
-<div id="026f2459" class="cell" data-execution_count="7">
+<div id="5ae1b8b6" class="cell" data-execution_count="7">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>z <span class="op">=</span> theta_hat <span class="op">/</span> se_analytical</span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>z</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="7">
 <pre><code>np.float64(2.1388179513414762)</code></pre>
 </div>
 </div>
-<div id="15862036" class="cell" data-execution_count="8">
+<div id="e0f3ab2b" class="cell" data-execution_count="8">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy.stats <span class="im">import</span> norm</span>
 <span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>p_value <span class="op">=</span> <span class="dv">2</span> <span class="op">*</span> (<span class="dv">1</span> <span class="op">-</span> norm.cdf(<span class="bu">abs</span>(z)))</span>
@@ -421,7 +421,7 @@ H_1: \theta \neq 0
 <section id="the-t-test-as-a-regression" class="level2">
 <h2 class="anchored" data-anchor-id="the-t-test-as-a-regression">The T-Test as a Regression</h2>
 <p>I can also represent the A/B test as a regression problem.</p>
-<div id="e42c58fb" class="cell" data-execution_count="9">
+<div id="7451ac42" class="cell" data-execution_count="9">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> statsmodels.api <span class="im">as</span> sm</span>
@@ -477,7 +477,7 @@ H_1: \theta \neq 0
 </tr>
 <tr class="odd">
 <th data-quarto-table-cell-role="th">Time:</th>
-<td>13:58:30</td>
+<td>14:09:05</td>
 <th data-quarto-table-cell-role="th">Log-Likelihood:</th>
 <td>-991.64</td>
 </tr>
@@ -579,7 +579,7 @@ H_1: \theta \neq 0
 <section id="the-problem-with-peeking" class="level2">
 <h2 class="anchored" data-anchor-id="the-problem-with-peeking">The Problem with Peeking</h2>
 <p>If I repeatedly check the results during the experiment, I increase the chance of finding a false positive.</p>
-<div id="cd3d81dd" class="cell" data-execution_count="10">
+<div id="618aabe6" class="cell" data-execution_count="10">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> simulate_peeking():</span>
 <span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>    A <span class="op">=</span> np.random.binomial(<span class="dv">1</span>, <span class="fl">0.2</span>, <span class="dv">1000</span>)</span>
 <span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>    B <span class="op">=</span> np.random.binomial(<span class="dv">1</span>, <span class="fl">0.2</span>, <span class="dv">1000</span>)</span>

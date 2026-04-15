@@ -1,5 +1,61 @@
 [
   {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About Me",
+    "section": "",
+    "text": "My name is Jin Liu.\nI am currently pursuing my MSBA degree at UCSD, focusing on applying data to solve real-world business problems.\n\n\n\nData analysis with Python\nMarketing analytics\nBuilding websites with Quarto\n\n\n\n\nI hope to work in strategy or business analytics roles in tech companies like Xiaohongshu or Douyin.\n\n\n\nI built this website using Quarto and customized it myself!"
+  },
+  {
+    "objectID": "about.html#hello",
+    "href": "about.html#hello",
+    "title": "About Me",
+    "section": "",
+    "text": "My name is Jin Liu.\nI am currently pursuing my MSBA degree at UCSD, focusing on applying data to solve real-world business problems.\n\n\n\nData analysis with Python\nMarketing analytics\nBuilding websites with Quarto\n\n\n\n\nI hope to work in strategy or business analytics roles in tech companies like Xiaohongshu or Douyin.\n\n\n\nI built this website using Quarto and customized it myself!"
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "Conducted data analysis using Python\nCleaned and visualized marketing data\nGenerated insights for decision making"
+  },
+  {
+    "objectID": "projects.html#marketing-analysis-project",
+    "href": "projects.html#marketing-analysis-project",
+    "title": "Projects",
+    "section": "",
+    "text": "Conducted data analysis using Python\nCleaned and visualized marketing data\nGenerated insights for decision making"
+  },
+  {
+    "objectID": "projects.html#data-analytics-project",
+    "href": "projects.html#data-analytics-project",
+    "title": "Projects",
+    "section": "📈 Data Analytics Project",
+    "text": "📈 Data Analytics Project\n\nAnalyzed user behavior data\nBuilt visualizations using Python\nApplied statistical methods to identify trends"
+  },
+  {
+    "objectID": "projects.html#more-coming-soon",
+    "href": "projects.html#more-coming-soon",
+    "title": "Projects",
+    "section": "🚀 More Coming Soon",
+    "text": "🚀 More Coming Soon\nI will continue to add more projects as I develop my skills in data analytics and business strategy."
+  },
+  {
+    "objectID": "Resume.html",
+    "href": "Resume.html",
+    "title": "Resume",
+    "section": "",
+    "text": "⬇️ Download Resume\nDownload PDF file."
+  },
+  {
+    "objectID": "Resume.html#my-resume",
+    "href": "Resume.html#my-resume",
+    "title": "Resume",
+    "section": "",
+    "text": "⬇️ Download Resume\nDownload PDF file."
+  },
+  {
     "objectID": "hw1_questions.html",
     "href": "hw1_questions.html",
     "title": "A/B Testing a Call to Action",
@@ -60,7 +116,7 @@
     "href": "hw1_questions.html#the-t-test-as-a-regression",
     "title": "A/B Testing a Call to Action",
     "section": "The T-Test as a Regression",
-    "text": "The T-Test as a Regression\nI can also represent the A/B test as a regression problem.\n\nimport numpy as np\nimport pandas as pd\nimport statsmodels.api as sm\n\nnp.random.seed(42)\n\nn = 1000\npi_A = 0.22\npi_B = 0.18\n\nA = np.random.binomial(1, pi_A, n)\nB = np.random.binomial(1, pi_B, n)\n\nY = np.concatenate([A, B])\nD = np.concatenate([np.ones(len(A)), np.zeros(len(B))])\n\ndf = pd.DataFrame({\n    \"Y\": Y,\n    \"D\": D\n})\n\nX = sm.add_constant(df[\"D\"])\nmodel = sm.OLS(df[\"Y\"], X).fit()\n\nmodel.summary()\n\n\nOLS Regression Results\n\n\nDep. Variable:\nY\nR-squared:\n0.002\n\n\nModel:\nOLS\nAdj. R-squared:\n0.002\n\n\nMethod:\nLeast Squares\nF-statistic:\n4.570\n\n\nDate:\nWed, 15 Apr 2026\nProb (F-statistic):\n0.0327\n\n\nTime:\n13:58:30\nLog-Likelihood:\n-991.64\n\n\nNo. Observations:\n2000\nAIC:\n1987.\n\n\nDf Residuals:\n1998\nBIC:\n1998.\n\n\nDf Model:\n1\n\n\n\n\nCovariance Type:\nnonrobust\n\n\n\n\n\n\n\n\n\n\n\ncoef\nstd err\nt\nP&gt;|t|\n[0.025\n0.975]\n\n\nconst\n0.1780\n0.013\n14.161\n0.000\n0.153\n0.203\n\n\nD\n0.0380\n0.018\n2.138\n0.033\n0.003\n0.073\n\n\n\n\n\n\n\n\nOmnibus:\n434.378\nDurbin-Watson:\n1.932\n\n\nProb(Omnibus):\n0.000\nJarque-Bera (JB):\n777.046\n\n\nSkew:\n1.518\nProb(JB):\n1.85e-169\n\n\nKurtosis:\n3.320\nCond. No.\n2.62\n\n\n\nNotes:[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.\n\n\nThe coefficient on \\(D\\) represents the difference in means between the two groups, which is the same as \\(\\hat{\\theta}\\).\nThis shows that hypothesis testing and regression are closely connected."
+    "text": "The T-Test as a Regression\nI can also represent the A/B test as a regression problem.\n\nimport numpy as np\nimport pandas as pd\nimport statsmodels.api as sm\n\nnp.random.seed(42)\n\nn = 1000\npi_A = 0.22\npi_B = 0.18\n\nA = np.random.binomial(1, pi_A, n)\nB = np.random.binomial(1, pi_B, n)\n\nY = np.concatenate([A, B])\nD = np.concatenate([np.ones(len(A)), np.zeros(len(B))])\n\ndf = pd.DataFrame({\n    \"Y\": Y,\n    \"D\": D\n})\n\nX = sm.add_constant(df[\"D\"])\nmodel = sm.OLS(df[\"Y\"], X).fit()\n\nmodel.summary()\n\n\nOLS Regression Results\n\n\nDep. Variable:\nY\nR-squared:\n0.002\n\n\nModel:\nOLS\nAdj. R-squared:\n0.002\n\n\nMethod:\nLeast Squares\nF-statistic:\n4.570\n\n\nDate:\nWed, 15 Apr 2026\nProb (F-statistic):\n0.0327\n\n\nTime:\n14:09:05\nLog-Likelihood:\n-991.64\n\n\nNo. Observations:\n2000\nAIC:\n1987.\n\n\nDf Residuals:\n1998\nBIC:\n1998.\n\n\nDf Model:\n1\n\n\n\n\nCovariance Type:\nnonrobust\n\n\n\n\n\n\n\n\n\n\n\ncoef\nstd err\nt\nP&gt;|t|\n[0.025\n0.975]\n\n\nconst\n0.1780\n0.013\n14.161\n0.000\n0.153\n0.203\n\n\nD\n0.0380\n0.018\n2.138\n0.033\n0.003\n0.073\n\n\n\n\n\n\n\n\nOmnibus:\n434.378\nDurbin-Watson:\n1.932\n\n\nProb(Omnibus):\n0.000\nJarque-Bera (JB):\n777.046\n\n\nSkew:\n1.518\nProb(JB):\n1.85e-169\n\n\nKurtosis:\n3.320\nCond. No.\n2.62\n\n\n\nNotes:[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.\n\n\nThe coefficient on \\(D\\) represents the difference in means between the two groups, which is the same as \\(\\hat{\\theta}\\).\nThis shows that hypothesis testing and regression are closely connected."
   },
   {
     "objectID": "hw1_questions.html#the-problem-with-peeking",
@@ -75,62 +131,6 @@
     "title": "A/B Testing a Call to Action",
     "section": "Conclusion",
     "text": "Conclusion\nIn this post, I used simulation to explore key ideas in frequentist statistics through an A/B testing framework. The results demonstrate how estimators behave in large samples, how uncertainty can be quantified using bootstrap methods, and how hypothesis testing helps guide decision-making.\nOverall, this exercise highlights the importance of careful experimental design and proper statistical inference when evaluating real-world business decisions."
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About Me",
-    "section": "",
-    "text": "My name is Jin Liu.\nI am currently pursuing my MSBA degree at UCSD, focusing on applying data to solve real-world business problems.\n\n\n\nData analysis with Python\nMarketing analytics\nBuilding websites with Quarto\n\n\n\n\nI hope to work in strategy or business analytics roles in tech companies like Xiaohongshu or Douyin.\n\n\n\nI built this website using Quarto and customized it myself!"
-  },
-  {
-    "objectID": "about.html#hello",
-    "href": "about.html#hello",
-    "title": "About Me",
-    "section": "",
-    "text": "My name is Jin Liu.\nI am currently pursuing my MSBA degree at UCSD, focusing on applying data to solve real-world business problems.\n\n\n\nData analysis with Python\nMarketing analytics\nBuilding websites with Quarto\n\n\n\n\nI hope to work in strategy or business analytics roles in tech companies like Xiaohongshu or Douyin.\n\n\n\nI built this website using Quarto and customized it myself!"
-  },
-  {
-    "objectID": "Resume.html",
-    "href": "Resume.html",
-    "title": "Resume",
-    "section": "",
-    "text": "⬇️ Download Resume\nDownload PDF file."
-  },
-  {
-    "objectID": "Resume.html#my-resume",
-    "href": "Resume.html#my-resume",
-    "title": "Resume",
-    "section": "",
-    "text": "⬇️ Download Resume\nDownload PDF file."
-  },
-  {
-    "objectID": "projects.html",
-    "href": "projects.html",
-    "title": "Projects",
-    "section": "",
-    "text": "Conducted data analysis using Python\nCleaned and visualized marketing data\nGenerated insights for decision making"
-  },
-  {
-    "objectID": "projects.html#marketing-analysis-project",
-    "href": "projects.html#marketing-analysis-project",
-    "title": "Projects",
-    "section": "",
-    "text": "Conducted data analysis using Python\nCleaned and visualized marketing data\nGenerated insights for decision making"
-  },
-  {
-    "objectID": "projects.html#data-analytics-project",
-    "href": "projects.html#data-analytics-project",
-    "title": "Projects",
-    "section": "📈 Data Analytics Project",
-    "text": "📈 Data Analytics Project\n\nAnalyzed user behavior data\nBuilt visualizations using Python\nApplied statistical methods to identify trends"
-  },
-  {
-    "objectID": "projects.html#more-coming-soon",
-    "href": "projects.html#more-coming-soon",
-    "title": "Projects",
-    "section": "🚀 More Coming Soon",
-    "text": "🚀 More Coming Soon\nI will continue to add more projects as I develop my skills in data analytics and business strategy."
   },
   {
     "objectID": "index.html",
