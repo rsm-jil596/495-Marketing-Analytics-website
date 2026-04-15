@@ -1,0 +1,86 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About Me",
+    "section": "",
+    "text": "My name is Jin Liu.\nI am currently pursuing my MSBA degree at UCSD, focusing on applying data to solve real-world business problems.\n\n\n\nData analysis with Python\nMarketing analytics\nBuilding websites with Quarto\n\n\n\n\nI hope to work in strategy or business analytics roles in tech companies like Xiaohongshu or Douyin.\n\n\n\nI built this website using Quarto and customized it myself!"
+  },
+  {
+    "objectID": "about.html#hello",
+    "href": "about.html#hello",
+    "title": "About Me",
+    "section": "",
+    "text": "My name is Jin Liu.\nI am currently pursuing my MSBA degree at UCSD, focusing on applying data to solve real-world business problems.\n\n\n\nData analysis with Python\nMarketing analytics\nBuilding websites with Quarto\n\n\n\n\nI hope to work in strategy or business analytics roles in tech companies like Xiaohongshu or Douyin.\n\n\n\nI built this website using Quarto and customized it myself!"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Jin Liu",
+    "section": "",
+    "text": "Hi, I’m Jin Liu.\nI am currently pursuing my MSBA degree at UC San Diego, focusing on applying data analytics to solve real-world business problems.\n\n👤 About Me\n📄 View Resume\n📊 View Projects"
+  },
+  {
+    "objectID": "index.html#welcome-to-my-website",
+    "href": "index.html#welcome-to-my-website",
+    "title": "My Resume",
+    "section": "",
+    "text": "Download PDF file.\nwebsite: title: “Jin Liu” navbar: left: - href: index.qmd text: About - href: Resume.qmd text: LiuJin Resume 202602.pdf"
+  },
+  {
+    "objectID": "Resume.html",
+    "href": "Resume.html",
+    "title": "Resume",
+    "section": "",
+    "text": "⬇️ Download Resume\nDownload PDF file."
+  },
+  {
+    "objectID": "Resume.html#my-resume",
+    "href": "Resume.html#my-resume",
+    "title": "Resume",
+    "section": "",
+    "text": "⬇️ Download Resume\nDownload PDF file."
+  },
+  {
+    "objectID": "index.html#welcome",
+    "href": "index.html#welcome",
+    "title": "Jin Liu",
+    "section": "",
+    "text": "Hi, I’m Jin Liu.\nI am currently pursuing my MSBA degree at UC San Diego, focusing on applying data analytics to solve real-world business problems.\n\n👤 About Me\n📄 View Resume\n📊 View Projects"
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "Conducted data analysis using Python\nCleaned and visualized marketing data\nGenerated insights for decision making"
+  },
+  {
+    "objectID": "projects.html#marketing-analysis-project",
+    "href": "projects.html#marketing-analysis-project",
+    "title": "Projects",
+    "section": "",
+    "text": "Conducted data analysis using Python\nCleaned and visualized marketing data\nGenerated insights for decision making"
+  },
+  {
+    "objectID": "projects.html#data-project",
+    "href": "projects.html#data-project",
+    "title": "Projects",
+    "section": "📈 Data Project",
+    "text": "📈 Data Project\n\nAnalyzed user behavior data"
+  },
+  {
+    "objectID": "projects.html#data-analytics-project",
+    "href": "projects.html#data-analytics-project",
+    "title": "Projects",
+    "section": "📈 Data Analytics Project",
+    "text": "📈 Data Analytics Project\n\nAnalyzed user behavior data\nBuilt visualizations using Python\nApplied statistical methods to identify trends"
+  },
+  {
+    "objectID": "projects.html#more-coming-soon",
+    "href": "projects.html#more-coming-soon",
+    "title": "Projects",
+    "section": "🚀 More Coming Soon",
+    "text": "🚀 More Coming Soon\nI will continue to add more projects as I develop my skills in data analytics and business strategy."
+  }
+]

@@ -1,0 +1,23 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "My Resume",
+    "section": "",
+    "text": "Download PDF file.\nwebsite: title: “Jin Liu” navbar: left: - href: index.qmd text: About - href: Resume.qmd text: LiuJin Resume 202602.pdf"
+  },
+  {
+    "objectID": "index.html#welcome-to-my-website",
+    "href": "index.html#welcome-to-my-website",
+    "title": "My Resume",
+    "section": "",
+    "text": "Download PDF file.\nwebsite: title: “Jin Liu” navbar: left: - href: index.qmd text: About - href: Resume.qmd text: LiuJin Resume 202602.pdf"
+  }
+]

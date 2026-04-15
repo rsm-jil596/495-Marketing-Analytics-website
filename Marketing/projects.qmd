@@ -1,0 +1,23 @@
+---
+title: "Projects"
+---
+
+## 📊 Marketing Analysis Project
+
+- Conducted data analysis using Python
+- Cleaned and visualized marketing data
+- Generated insights for decision making
+
+---
+
+## 📈 Data Analytics Project
+
+- Analyzed user behavior data
+- Built visualizations using Python
+- Applied statistical methods to identify trends
+
+---
+
+## 🚀 More Coming Soon
+
+I will continue to add more projects as I develop my skills in data analytics and business strategy.

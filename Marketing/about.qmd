@@ -1,0 +1,20 @@
+---
+title: "About Me"
+---
+
+## 👋 Hello!
+
+My name is Jin Liu.
+
+I am currently pursuing my MSBA degree at UCSD, focusing on applying data to solve real-world business problems.
+
+### 🎯 What I'm Learning
+- Data analysis with Python
+- Marketing analytics
+- Building websites with Quarto
+
+### 🚀 Goals
+I hope to work in strategy or business analytics roles in tech companies like Xiaohongshu or Douyin.
+
+### 😄 Fun Fact
+I built this website using Quarto and customized it myself!

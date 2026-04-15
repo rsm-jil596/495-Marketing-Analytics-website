@@ -1,0 +1,27 @@
+---
+title: "Jin Liu"
+image: "Photo/证件照.jpeg"
+about:
+  template: jolla
+  links:
+    - icon: envelope
+      href: ji1596@ucsd.edu
+    - icon: linkedin
+      href: https://www.linkedin.com/in/Jin-Liu
+---
+
+## 👋 Welcome!
+
+### MSBA Student | Business Analytics | Data-Driven Decision Making
+
+Hi, I'm Jin Liu.
+
+I am currently pursuing my MSBA degree at UC San Diego, focusing on applying data analytics to solve real-world business problems.
+
+---
+
+[👤 About Me](about.qmd)
+
+[📄 View Resume](Resume.qmd)
+
+[📊 View Projects](projects.qmd)
