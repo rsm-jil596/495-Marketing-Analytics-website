@@ -10,13 +10,13 @@ about:
       href: https://www.linkedin.com/in/Jin-Liu
 ---
 
-## 👋 Welcome!
+## Welcome!
 
 ### MSBA Student | Business Analytics | Data-Driven Decision Making
 
 Hi, I'm Jin Liu.
 
-I am currently pursuing my MSBA degree at UC San Diego, focusing on applying data analytics to solve real-world business problems.
+I am currently pursuing a Master of Science in Business Analytics at UC San Diego, with a strong interest in applying data-driven approaches to solve real-world business problems and generate actionable insights.
 
 ---
 
